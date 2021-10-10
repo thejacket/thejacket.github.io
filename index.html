@@ -22,18 +22,12 @@
   <link rel="preload" href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
-  
     <script>
-  function detectMob() {
-    return ( ( window.innerWidth <= 800 ) && ( window.innerHeight <= 600 ) );
-  };
-  
-  document.addEventListener("DOMContentLoaded", function() {
-  if (detectMob()) {
-    document.getElementById('footerinho').scrollIntoView();
-  }
-});
-  
+	window.onload = function() {
+	  if (( window.innerWidth <= 800 ) && ( window.innerHeight <= 600 )) {
+		document.getElementById('footerinho').scrollIntoView();
+	  }
+	};
   </script>
   
   
